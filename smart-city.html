@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+
+      <script src="https://browser.sentry-cdn.com/5.6.1/bundle.min.js" integrity="sha384-pGTFmbQfua2KiaV2+ZLlfowPdd5VMT2xU4zCBcuJr7TVQozMO+I1FmPuVHY3u8KB" crossorigin="anonymous">
+    </script>
+    <script>
+      ({ dsn: 'https://9f3eea8091aa4f0e9aa89e2d84b73b19@sentry.io/1532274' });
+    </script>
+  
+          <title>Городские Wi-Fi сети, Wi-Fi в общественном транспорте | МаксимаТелеком</title>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Городские Wi-Fi сети, Wi-Fi в общественном транспорте">
+<meta property="og:description" content="Умный город и транспорт - Wi-Fi решения и аналитика для цифровых городов от МаксимаТелеком. Единая городская транспортная сеть MT_FREE: метро, автобусы, аэроэкспресс, электрички.">
+<meta property="og:image" content="">
+<meta property="vk:image"  content="" />
+
+<meta property="og:url" content="smart-city.html">
+<meta property="og:site_name" content="MaximaTelecom">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="">
+
+
+<meta name="description" content="Умный город и транспорт - Wi-Fi решения и аналитика для цифровых городов от МаксимаТелеком. Единая городская транспортная сеть MT_FREE: метро, автобусы, аэроэкспресс, электрички.">
+  <script>
+    window.app = window.app || {};
+    window.app.meta = window.app.meta || {};
+    window.app.meta.data = {"title":"\u0413\u043e\u0440\u043e\u0434\u0441\u043a\u0438\u0435 Wi-Fi \u0441\u0435\u0442\u0438, Wi-Fi \u0432 \u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u043c \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u0435","description":"\u0423\u043c\u043d\u044b\u0439 \u0433\u043e\u0440\u043e\u0434 \u0438 \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442 - Wi-Fi \u0440\u0435\u0448\u0435\u043d\u0438\u044f \u0438 \u0430\u043d\u0430\u043b\u0438\u0442\u0438\u043a\u0430 \u0434\u043b\u044f \u0446\u0438\u0444\u0440\u043e\u0432\u044b\u0445 \u0433\u043e\u0440\u043e\u0434\u043e\u0432 \u043e\u0442 \u041c\u0430\u043a\u0441\u0438\u043c\u0430\u0422\u0435\u043b\u0435\u043a\u043e\u043c. \u0415\u0434\u0438\u043d\u0430\u044f \u0433\u043e\u0440\u043e\u0434\u0441\u043a\u0430\u044f \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442\u043d\u0430\u044f \u0441\u0435\u0442\u044c MT_FREE: \u043c\u0435\u0442\u0440\u043e, \u0430\u0432\u0442\u043e\u0431\u0443\u0441\u044b, \u0430\u044d\u0440\u043e\u044d\u043a\u0441\u043f\u0440\u0435\u0441\u0441, \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u043a\u0438."};
+  </script>
+  
+  <link rel="preload" href="/fonts/AeroportMedium.woff2" as="font">
+  <link rel="preload" href="/fonts/Aeroport.woff2" as="font">
+  <link rel="preload" href="/fonts/AeroportLight.woff2" as="font">
+
+  <link rel="stylesheet" href="/css/vendor.css?id=743b5685572e8eaad73c">
+  <link rel="stylesheet" href="/css/style.css?id=0c84c077a4c3ad9d82d9">
+
+  <script>
+    (function () {
+      window.app = window.app || {};
+      window.app.env = window.app.env || {};
+      window.app.env.locale = "ru";
+      window.app.env.title_suffix = " | МаксимаТелеком";
+    })();
+  </script>
+</head>
+<body class="page ">
+  <header class="header page__item container">
+  <div class="header__top">
+    <a class="header__logo" href="#">
+      <picture class="header__picture">
+        <img class="header__logo-image" src="/img/logo-maxima@1x.png" srcset="/img/logo-maxima@2x.png 2x" alt="MaximaTelecom">
+      </picture>
+      <svg class="header__logo-text" width="85" height="20" role="img" aria-label="MaximaTelecom" focusable="false">
+        <use xlink:href="/img/sprite.svg#logo-maxima"></use>
+      </svg>
+    </a>
+    <button class="header__menu-btn" type="button">
+      <svg class="header__menu-open" width="32" height="18" aria-label="Открыть меню" focusable="false">
+        <use xlink:href="/img/sprite.svg#btn-menu"></use>
+      </svg>
+      <svg class="header__menu-close" width="24" height="24" aria-label="Закрыть меню" focusable="false">
+        <use xlink:href="/img/sprite.svg#btn-close"></use>
+      </svg>
+    </button>
+  </div>
+  <nav class="header__menu menu animated">
+        <ul class="menu__list">
+              <li>
+          <a class="link link--block link--menu  link--menu " href="about.html">О компании</a>
+        </li>
+              <li>
+          <a class="link link--block link--menu  link--menu " href="support.html">Пользователю</a>
+        </li>
+              <li>
+          <a class="link link--block link--menu  link--active-menu " href="smart-city.html">Цифровой город</a>
+        </li>
+              <li>
+          <a class="link link--block link--menu  link--menu " href="careers.html">Карьера</a>
+        </li>
+              <li>
+          <a class="link link--block link--menu  link--menu " href="advertising.html">Рекламодателям</a>
+        </li>
+              <li>
+          <a class="link link--block link--menu  link--menu " href="contacts.html">Контакты</a>
+        </li>
+          </ul>
+        <ul class="menu__language">
+            <li>
+        <a class="link link--block link--menu  link--active-menu " href="smart-city.html">РУ</a>
+      </li>
+            <li>
+        <a class="link link--block link--menu  link--menu " href="/en/smart-city.html">EN</a>
+      </li>
+          </ul>
+  </nav>
+</header>
+<div class="overlay overlay--menu animated"></div>
+
+  <main class="page__item page__item--content ">
+      <section class="inner smart-city">
+    <div class="container wow fadeIn">
+      <div class="inner__intro inner__container smart-city__intro">
+        <h1 class="inner__title inner__title--city">Цифровой город —&nbsp;как&nbsp;на&nbsp;ладони</h1>
+        <p>Получайте агрегированную аналитику о маршрутах передвижения горожан, загруженности транспортной
+          инфраструктуры, социально-демографическом профиле, интересах и актуальных запросах населения с помощью
+          информационно-аналитической платформы М&aacute;ксимаТелеком</p>
+      </div>
+    </div>
+    <picture class="inner__main-picture inner__main-picture--city-mesh wow fadeIn">
+      <source media="(max-width: 767px)" srcset="/img/smart-city-mobile@1x.jpg 1x, /img/smart-city-mobile@2x.jpg 2x">
+      <img src="/img/smart-city@1x.jpg" srcset="/img/smart-city@2x.jpg 2x" width="1440" height="960" alt="">
+    </picture>
+    <section class="smart-city__digital smart-city__content-container digital" id="digital-transport">
+      <div class="smart-city__content">
+        <h2 class="smart-city__title">Цифровизация транспорта</h2>
+        <h3 id="united-city-network" class="smart-city__title-small">Единая городская транспортная сеть MT_FREE</h3>
+        <p class="smart-city__text-content">В&nbsp;Москве это: метрополитен, 8,5&nbsp;тыс. наземных транспортных
+          средств, поезда
+          &laquo;Аэроэкспресс&raquo;, пригородные электрички и&nbsp;другие городские локации.</p>
+        <picture>
+          <source media="(max-width: 767px)"
+            srcset="/img/network-shema-mobile@1x.jpg 1x, /img/network-shema-mobile@2x.jpg 2x">
+          <source media="(max-width: 1199px)"
+            srcset="/img/network-shema-tablet@1x.jpg 1x, /img/network-shema-tablet@2x.jpg 2x">
+          <img class="smart-city__network-shema" src="/img/network-shema-desktop@1x.jpg"
+            srcset="/img/network-shema-desktop@2x.jpg 2x" alt="Схема единой транспортной сети MT_FREE">
+        </picture>
+        <section class="smart-city__manage manage">
+          <h3 id="manage-infostructure" class="smart-city__title-small">Контроль над инфраструктурой общественного транспорта</h3>
+          <p class="smart-city__text-content">Весь транспорт на&nbsp;карте, контроль графика и&nbsp;безопасности
+            движения, мониторинг состояния
+            водителей
+            и&nbsp;машинистов, загруженность подвижных единиц и&nbsp;аналитика для прогнозирования ремонта.</p>
+          <div class="smart-city__system-interval">
+            <svg class="smart-city__icon smart-city__icon--interval" width="40" height="40">
+              <use xlink:href="/img/sprite.svg#icon-tran-interval"></use>
+            </svg>
+            <p class="smart-city__text-content">Система контроля качества вождения</p>
+            <p class="smart-city__text-content">Сведения о&nbsp;плановом маршруте</p>
+          </div>
+          <picture>
+            <source media="(max-width: 767px)"
+              srcset="/img/system-interval-mobile@1x.png 1x, /img/system-interval-mobile@2x.png 2x">
+            <source media="(max-width: 1199px)"
+              srcset="/img/system-interval-tablet@1x.png 1x, /img/system-interval-tablet@2x.png 2x">
+            <img class="smart-city__system-interval-shema" src="/img/system-interval-desktop@1x.png"
+              srcset="/img/system-interval-desktop@2x.png 2x" alt="Схематичное представление системы Интервал">
+          </picture>
+          <p class="smart-city__figcaption smart-city__figcaption--small">Графическая панель с&nbsp;рекомендациями
+            по&nbsp;маршруту (имитация
+            монитора водителя)</p>
+            <picture class="smart-city__fake-cheap">
+                <source media="(max-width: 767px)" srcset="/img/fake-mobile.png 1x, /img/fake-mobile@2x.png 2x">
+                <img class="smart-city__fake smart-city__fake--top" src="/img/fake-desk.png" srcset="/img/fake-desk@2x.png 2x" alt="Особенности системы интервал">
+              </picture>
+              <img class="smart-city__fake--mobile" src="/img/fake-mobile-left.png" alt="Бортовой компьютер">
+          <!--Временное отключение
+          <ul class="smart-city__interval-features">
+            <li>Бортовой компьютер, установка на&nbsp;любой городской транспорт</li>
+            <li>Система контроля оплаты проезда</li>
+            <li>
+              <svg class="smart-city__icon smart-city__icon--passengers-percent" width="40" height="40">
+                <use xlink:href="/img/sprite.svg#icon-passengers-percent"></use>
+              </svg>
+              Количество пассажиров в&nbsp;салоне точность&nbsp;98%
+            </li>
+          </ul>
+        -->
+          <div class="smart-city__interval-info smart-city__flex-container">
+            <div class="smart-city__column smart-city__software-platform">
+              <!--
+              <div class="screen screen--inforgaphic">
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="/img/infogaphic-mobile@1x.jpg 1x, /img/infogaphic-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)"
+                    srcset="/img/infographic-tablet@1x.jpg 1x, /img/infogaphic-tablet@2x.jpg 2x">
+                  <img src="/img/infogaphic-desktop@1x.jpg" srcset="/img/infogaphic-desktop@2x.jpg 2x"
+                    alt="Инфоргафика">
+                </picture>
+              </div>
+              -->
+              <h3 id="united-software-platform" class="smart-city__title-small">Единая программная платформа</h3>
+              <p class="smart-city__text-content smart-city__text-content--interval">Статистика пассажиропотока по&nbsp;маршрутам и&nbsp;транспортным средствам</p>
+              <p class="smart-city__text-content smart-city__text-content--interval">Выявление маршрутов
+                с&nbsp;наибольшим количеством безбилетников</p>
+              <p class="smart-city__text-content smart-city__text-content--interval">Предоставление информации о&nbsp;наличии свободных мест в&nbsp;мобильных приложениях перевозчиков
+              </p>
+            </div>
+            <div class="smart-city__column smart-city__display-driver">
+              <!--
+              <div class="screen screen--indor">
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="/img/screen-driver-mobile@1x.png 1x, /img/screen-driver-mobile@2x.png 2x">
+                  <source media="(max-width: 1199px)"
+                    srcset="/img/screen-driver-tablet@1x.png 1x, /img/screen-driver-tablet@2x.png 2x">
+                  <img src="/img/screen-driver-desktop@1x.png" srcset="/img/screen-driver-desktop@2x.png 2x"
+                    alt="Съемка внутри салона">
+                </picture>
+              </div>
+              -->
+              <img class="smart-city__fake--mobile smart-city__fake--mobile-right" src="/img/fake-mobile-right.png" alt="Съемка внутри салона">
+              <h3 class="smart-city__title-small">Монитор водителя</h3>
+              <p class="smart-city__text-content smart-city__text-content--interval">Общее количество пассажиров
+                в&nbsp;салоне</p>
+              <p class="smart-city__text-content smart-city__text-content--interval">Общее количество перевезенных
+                пассажиров</p>
+              <p class="smart-city__text-content smart-city__text-content--interval">Количество оплаченных поездок</p>
+            </div>
+          </div>
+          <div class="screen screen--driver">
+            <picture>
+              <source media="(max-width: 767px)"
+                srcset="/img/screen-driver2-mobile@1x.jpg 1x, /img/screen-driver2-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)"
+                srcset="/img/screen-driver2-tablet@1x.jpg 1x, /img/screen-driver2-tablet@2x.jpg 2x">
+              <img src="/img/screen-driver2-desktop@1x.jpg" srcset="/img/screen-driver2-desktop@2x.jpg 2x"
+                alt="Монитор водителя">
+            </picture>
+          </div>
+          <p class="smart-city__figcaption">Отображение на&nbsp;мониторе водителя в&nbsp;режиме маршрута</p>
+
+        </section>
+        <section class="smart-city__security security">
+          <h3 id="security" class="smart-city__title-small">Общественная безопасность</h3>
+          <p class="smart-city__text-content">Онлайн-видео с камер видеонаблюдения на подвижных единицах
+            и стационарных объектах, распознавание лиц,
+            поиск правонарушителей и выявление аномальной активности.</p>
+          <img class="security__img-shema" src="/img/security-shema.svg" width="288"
+            alt="Схема систем безопасности подвижного состава">
+          <div class="security__flex-container">
+            <div class="smart-city__column">
+              <picture>
+                <source media="(max-width: 767px)"
+                  srcset="/img/security1-mobile@1x.jpg 1x, /img/security1-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="/img/security1-tablet@1x.jpg 1x, /img/security1-tablet@2x.jpg 2x">
+                <img class="security__img" src="/img/security1-desktop@1x.jpg" srcset="/img/security1-desktop@2x.jpg 2x"
+                  alt="Единый диспетчерский центр Московского метрополитена">
+              </picture>
+              <p class="smart-city__figcaption security__figcaption">Единый диспетчерский центр Московского
+                метрополитена</p>
+            </div>
+            <div class="smart-city__column">
+              <picture>
+                <source media="(max-width: 767px)"
+                  srcset="/img/security2-mobile@1x.jpg 1x, /img/security2-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="/img/security2-tablet@1x.jpg 1x, /img/security2-tablet@2x.jpg 2x">
+                <img class="security__img" src="/img/security2-desktop@1x.jpg" srcset="/img/security2-desktop@2x.jpg 2x"
+                  alt="Камеры в вагоне поезда и кабине машиниста">
+              </picture>
+              <p class="smart-city__figcaption security__figcaption">Камеры в вагоне поезда и кабине машиниста</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="smart-city__menu">
+        <ul>
+          <li class="smart-city__menu-section">
+            <a class="link link--text link--not-underlined smart-city__menu-item mart-city__menu-item--current" href="#digital-transport">Цифровизация транспорта</a>
+            <!--
+            <ul>
+              <li>
+                <a class="link link--text link--not-underlined smart-city__menu-item smart-city__menu-item--current" href="#united-city-network">Единая городская транспортная сеть MT_FREE</a>
+              </li>
+              <li>
+                <a class="link link--text link--not-underlined smart-city__menu-item" href="#manage-infostructure">Контроль над инфраструктурой общественного транспорта</a>
+              </li>
+              <li>
+                <a class="link link--text link--not-underlined smart-city__menu-item" href="#united-software-platform">Единая программная платформа</a>
+              </li>
+              <li>
+                <a class="link link--text link--not-underlined smart-city__menu-item" href="#security">Общественная безопасность</a>
+              </li>
+            </ul>
+            -->
+          </li>
+          <li class="smart-city__menu-section">
+            <a class="link link--text link--not-underlined smart-city__menu-item" href="#services">Сервисы для метрополитенов</a>
+          </li>
+          <li class="smart-city__menu-section">
+            <a class="link link--text link--not-underlined smart-city__menu-item" href="#wifi">Wi-Fi аналитика</a>
+            <!--
+            <ul class="smart-city__submenu">
+              <li>
+                <a class="link link--text link--not-underlined smart-city__menu-item" href="#transport-analytic">Транспортная аналитика</a>
+              </li>
+              <li>
+                <a class="link link--text link--not-underlined smart-city__menu-item" href="#world-cup-case">Кейс Чемпионата мира по&nbsp;футболу</a>
+              </li>
+            </ul>
+            -->
+          </li>
+          <!--
+          <li class="smart-city__menu-section">
+            <a class="link link--text link--not-underlined smart-city__menu-item" href="#systems-info-for-passengers">Системы информирования пассажиров</a>
+
+            <ul class="smart-city__submenu">
+              <li>
+                <a class="link link--text link--not-underlined smart-city__menu-item" href="#online-translation">Первое в&nbsp;мире онлайн телевещание в&nbsp;поездах метро</a>
+                </li>
+              <li>
+                <a class="link link--text link--not-underlined smart-city__menu-item" href="#manage-content">Централизованное управление контентом</a>
+              </li>
+              <li>
+                <a class="link link--text link--not-underlined smart-city__menu-item" href="#system-of-infomation">Системы оповещения пассажиров внутри подвижного состава</a>
+              </li>
+            </ul>
+
+          </li>
+          -->
+        </ul>
+      </div>
+    </section>
+    <div class="smart-city__card-wrapper" id="services">
+      <section class="card card--picture card--banner smart-city__card wow fadeInUp">
+        <picture class="card__picture card__picture--overlay">
+          <source media="(max-width: 767px)"
+            srcset="/img/smart-city-bg-train-mobile@1x.jpg 1x, /img/smart-city-bg-train-mobile@2x.jpg 2x">
+          <img src="/img/smart-city-bg-train-desktop@1x.jpg" srcset="/img/smart-city-bg-train-desktop@2x.jpg 2x"
+            width="1470" height="941" alt="">
+        </picture>
+        <div class="container card__inner smart-city__card-inner">
+          <div class="card__top card__top--smart-city">
+            <h2 class="card__title card__title--smart-city">Сервисы для метрополитенов</h2>
+          </div>
+          <ul class="card__bottom columns columns--tablet-wide columns--icons smart-city__services">
+            <li class="columns__item columns__item--train">
+              <svg width="80" height="80" role="presentation" aria-hidden="true" focusable="false">
+                <use xlink:href="/img/sprite.svg#icon-cam"></use>
+              </svg>
+              <h3 class="smart-city__title-small columns__title columns__title--short">Цифровизация инфраструктуры</h3>
+              <p>Мониторинг состояния вентиляционных шахт Петербургского метрополитена, включая незаконное
+                проникновение, загазованность, мониторинг узлов и&nbsp;агрегатов.</p>
+            </li>
+            <li class="columns__item columns__item--train">
+              <svg width="68" height="78" role="presentation" aria-hidden="true" focusable="false">
+                <use xlink:href="/img/sprite.svg#icon-message-white"></use>
+              </svg>
+              <h3 class="smart-city__title-small columns__title">Платформа коммуникации с&nbsp;пассажирами</h3>
+              <p>Таргетированное оповещение пассажиров Московского метрополитена о&nbsp;чрезвычайных ситуациях по&nbsp;SMS, в&nbsp;интернете и&nbsp;с&nbsp;помощью push-уведомлений.</p>
+            </li>
+            <li class="columns__item columns__item--train">
+              <svg width="78" height="78" role="presentation" aria-hidden="true" focusable="false">
+                <use xlink:href="/img/sprite.svg#icon-person-rec"></use>
+              </svg>
+              <h3 class="smart-city__title-small columns__title columns__title--short">Интеллектуальное видеонаблюдение</h3>
+              <p>Проектирование системы видеонаблюдения в подвижном составе с онлайн передачей данных с состава и
+                автоматической выгрузкой архива.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <section class="smart-city__analyze smart-city__content-container analyze" id="wifi">
+      <div class="smart-city__content">
+        <h2 class="smart-city__title smart-city__title--wifi">Wi-Fi аналитика</h2>
+        <p class="smart-city__small-text">На&nbsp;примере аналитики ЧМ-2018, совместного проекта с&nbsp;Инновационным центром Департамента Транспорта</p>
+        <section class="analyze__transport-analytic">
+          <h3 id="transport-analytic" class="smart-city__title-small">Транспортная аналитика</h3>
+          <p class="smart-city__text-content">Сбор паттернов использования городского общественного транспорта
+            во&nbsp;время крупных мероприятий
+            (например, матчей Чемпионата мира по&nbsp;футболу 2018) для анализа нагрузки на&nbsp;транспортную
+            инфраструктуру.</p>
+          <p class="smart-city__text-content smart-city__text-content--analytic">Благодаря Wi-Fi аналитике
+            и&nbsp;платформе коммуникации с&nbsp;пассажирами город получил обратную связь
+            о&nbsp;качестве работы городских служб в&nbsp;период ЧМ-2018.</p>
+          <p class="smart-city__small-text">Данные и&nbsp;аналитика
+              МаксимаТелеком использовалась Правительством Москвы для подготовки отчетов
+              по&nbsp;итогам Чемпионата мира по&nbsp;футболу 2018&nbsp;г.</p>
+          <ul class="analyze__list">
+            <li>
+              <svg class="smart-city__icon smart-city__icon--match" width="40" height="40">
+                <use xlink:href="/img/sprite.svg#icon-match"></use>
+              </svg>
+              <p class="smart-city__text-content smart-city__text-content--match">12&nbsp;матчей в&nbsp;Москве</p>
+              <p class="smart-city__small-text">
+                14.06&nbsp;&mdash; 15.07.2019<br>
+              7&nbsp;матчей в&nbsp;Лужниках и&nbsp;5&nbsp;на Спартаке</p>
+              <!--<p class="smart-city__text-content"><em>7&nbsp;матчей в&nbsp;Лужниках и&nbsp;5&nbsp;на Спартаке</em></p>-->
+            </li>
+            <li>
+              <svg class="smart-city__icon smart-city__icon--visit" width="40" height="40">
+                <use xlink:href="/img/sprite.svg#icon-station"></use>
+              </svg>
+              <p class="smart-city__text-content">
+                770&nbsp;000<br>
+                посещаемость матчей на&nbsp;стадионах
+              </p>
+            </li>
+            <li>
+              <svg class="smart-city__icon smart-city__icon--global" width="40" height="40">
+                <use xlink:href="/img/sprite.svg#icon-global"></use>
+              </svg>
+              <p class="smart-city__text-content">42% иностранных болельщиков</p>
+            </li>
+            <li>
+              <svg class="smart-city__icon smart-city__icon--good" width="40" height="40">
+                <use xlink:href="/img/sprite.svg#icon-good"></use>
+              </svg>
+              <p class="smart-city__text-content">90% удовлетворенность организацией&nbsp;ЧМ</p>
+              <p class="smart-city__small-text">среди посетителей события</p>
+            </li>
+            <li>
+              <svg class="smart-city__icon smart-city__icon--like" width="40" height="40">
+                <use xlink:href="/img/sprite.svg#icon-like"></use>
+              </svg>
+              <p class="smart-city__text-content">98% удовлетворенность организацией ЧМ среди иностранцев</p>
+            </li>
+          </ul>
+          <div class="analyze__statistic analyze__flex-container">
+            <div class="analyze__left">
+              <p class="smart-city__text-content">Средняя посещаемость стадионов в&nbsp;дни матчей в&nbsp;Москве, тыс.
+                чел.</p>
+              <div class="histogram histogram--visits">
+                <div class="histogram__values">
+                  <p class="histogram__value histogram__value--three-col histogram__value--first-luzniki">
+                    <span>89</span></p>
+                  <p class="histogram__value histogram__value--three-col histogram__value--first-spartak">
+                    <span>54</span></p>
+                  <p class="histogram__value histogram__value--three-col histogram__value--first-fan"><span>57</span>
+                  </p>
+                </div>
+                <div class="histogram__names">
+                  <p class="histogram__name histogram__value--three-col">Лужники</p>
+                  <p class="histogram__name histogram__value--three-col">Спартак</p>
+                  <p class="histogram__name histogram__value--three-col">Фан-зона</p>
+                </div>
+              </div>
+            </div>
+            <div class="analyze__right">
+              <p class="smart-city__text-content">Большинство болельщиков покидали стадионы менее чем за&nbsp;80 минут. Cреднее время убытия, мин.
+              </p>
+              <div class="histogram histogram--left">
+                <div class="histogram__values">
+                  <p class="histogram__value histogram__value--two-col histogram__value--second-luzniki">
+                    <span>75&nbsp;мин.</span></p>
+                  <p class="histogram__value histogram__value--two-col histogram__value--second-spartak">
+                    <span>65&nbsp;мин.</span></p>
+                </div>
+                <div class="histogram__names">
+                  <p class="histogram__name histogram__value--two-col">Лужники</p>
+                  <p class="histogram__name histogram__value--two-col">Спартак</p>
+                </div>
+              </div>
+            </div>
+            <div class="analyze__left">
+              <p class="smart-city__text-content analyze__resume analyze__resume--security">
+                <svg width="40" height="40">
+                  <use xlink:href="/img/sprite.svg#icon-security"></use>
+                </svg>
+                <span>93% удовлетворенность безопасностью болельщиков</span>
+              </p>
+            </div>
+            <div class="analyze__right">
+              <p class="smart-city__text-content analyze__resume">
+                <svg width="40" height="40">
+                  <use xlink:href="/img/sprite.svg#icon-info"></use>
+                </svg>
+                <span>81% удовлетворенность информированием ДТ</span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="analyze__transport-a11y">
+          <h3 id="world-cup-case" class="smart-city__title-small">Транспортная обеспеченность</h3>
+          <p class="smart-city__text-content">Большинство болельщиков уезжали на метро и&nbsp;МЦК. Убытие болельщиков по
+            видам транспорта, %</p>
+          <div class="analyze__flex-container analyze__flex-container--wrap">
+            <table class="analyze__table">
+              <tr class="analyze__table-row">
+                <td class="analyze__table-col"></td>
+                <td class="analyze__table-col analyze__table-col--head analyze__table-col--second">Лужники</td>
+                <td class="analyze__table-col analyze__table-col--head">Спартак</td>
+              </tr>
+              <tr class="analyze__table-row">
+                <td class="analyze__table-col analyze__table-col--title">
+                  <svg class="smart-city__icon smart-city__icon--tab-metro">
+                    <use xlink:href="/img/sprite.svg#icon-metro"></use>
+                  </svg>
+                  Метро, МЦК
+                </td>
+                <td class="analyze__table-col analyze__table-col--second">81%</td>
+                <td class="analyze__table-col">80%</td>
+              </tr>
+              <tr class="analyze__table-row">
+                <td class="analyze__table-col analyze__table-col--title">
+                  <svg class="smart-city__icon smart-city__icon--tab-bus">
+                    <use xlink:href="/img/sprite.svg#icon-bus"></use>
+                  </svg>
+                  НГПТ, Шатлы
+                </td>
+                <td class="analyze__table-col analyze__table-col--second">8%</td>
+                <td class="analyze__table-col">10%</td>
+              </tr>
+              <tr class="analyze__table-row">
+                <td class="analyze__table-col analyze__table-col--title">
+                  <svg class="smart-city__icon smart-city__icon--tab-car">
+                    <use xlink:href="/img/sprite.svg#icon-car"></use>
+                  </svg>
+                  Авто, такси
+                </td>
+                <td class="analyze__table-col analyze__table-col--second">4%</td>
+                <td class="analyze__table-col">8%</td>
+              </tr>
+              <tr class="analyze__table-row">
+                <td class="analyze__table-col analyze__table-col--title">
+                  <svg class="smart-city__icon smart-city__icon--tab-man">
+                    <use xlink:href="/img/sprite.svg#icon-man"></use>
+                  </svg>
+                  Пешком
+                </td>
+                <td class="analyze__table-col analyze__table-col--second">7%</td>
+                <td class="analyze__table-col">2%</td>
+              </tr>
+            </table>
+            <div class="analyze__flex-item analyze__flex-item--likes">
+              <p class="smart-city__text-content">
+                <svg width="40" height="40">
+                  <use xlink:href="/img/sprite.svg#icon-man-goes-to-right"></use>
+                </svg>
+                <span>89% удовлетворенность организацией прибытия</span>
+              </p>
+              <p class="smart-city__text-content">
+                <svg width="40" height="40">
+                  <use xlink:href="/img/sprite.svg#icon-man-goes-to-left"></use>
+                </svg>
+                <span>80% удовлетворенность организацией убытия</span>
+              </p>
+            </div>
+            <div class="analyze__flex-item analyze__flex-item--h4">
+              <h4 class="smart-city__title-small">Социально-демографический анализ</h4>
+              <p class="smart-city__text-content">Формирование портрета аудитории на&nbsp;основании пола, возраста, интересов, типа мобильного устройства и&nbsp;региона проживания</p>
+            </div>
+            <div class="analyze__flex-item analyze__flex-item--h4">
+              <h4 class="smart-city__title-small">Моделирование массовых мероприятий</h4>
+              <p class="smart-city__text-content">Широкие возможности для предиктивного анализа и&nbsp;моделирования
+                нагрузки на&nbsp;транспортную
+                инфраструктуру во&nbsp;время массовых мероприятий.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!--
+    <section class="smart-city__passenger-info passenger-info">
+      <div class="smart-city__content">
+        <h2 id="systems-info-for-passengers" class="smart-city__title">Системы информирования пассажиров</h2>
+        <p id="online-translation" class="smart-city__text-content">Проект по&nbsp;оснащению подвижного состава метрополитена системой
+          информирования пассажиров
+          с&nbsp;телевещанием в&nbsp;прямом эфире реализован за&nbsp;5&nbsp;месяцев, включая проектирование
+          и&nbsp;поставку оборудования.</p>
+        <div class="passenger-info__flex-container">
+          <div class="passenger-info__left">
+            <picture>
+              <source media="(max-width: 767px)"
+                srcset="/img/passenger-display-mobile@1x.jpg 1x, /img/passenger-display-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)"
+                srcset="/img/passenger-display-tablet@1x.jpg 1x, /img/passenger-display-tablet@2x.jpg 2x">
+              <img class="passenger-info__display" src="/img/passenger-display-desktop@1x.jpg"
+                srcset="/img/passenger-display-desktop@2x.jpg 2x" alt="Дисплей в вагонах метро">
+            </picture>
+          </div>
+          <div class="passenger-info__right">
+            <p class="smart-city__text-content"><strong>8&nbsp;720</strong></p>
+            <p class="smart-city__text-content smart-city__text-content--passenger">Установлено вандалоустойчивых
+              медиаэкранов с&nbsp;микрофонами,
+              камерами и&nbsp;промышленными матрицами.
+            </p>
+          </div>
+        </div>
+        <div id="manage-content" class="passenger-info__container passenger-info__container--media">
+          <p class="smart-city__text-content">Медиаплатформа для управления контентом&nbsp;&mdash; вещание
+            специализированного контента канала Москва
+            24&nbsp;и&nbsp;пассажирской информации.</p>
+          <div class="screen screen--media">
+            <picture>
+              <img src="/img/screen-media-desktop@1x.jpg" srcset="/img/screen-media-desktop@2x.jpg 2x" alt="">
+            </picture>
+          </div>
+        </div>
+        <div id="system-of-infomation" class="passenger-info__container passenger-info__container--stantion">
+          <p class="smart-city__text-content">Система информирования пассажиров внутри подвижного состава
+            &laquo;Иволга&raquo;</p>
+          <div class="screen screen--stantions">
+            <picture>
+              <source media="(max-widht: 767px)"
+                srcset="/img/screen-stantions-mobile@1x.jpg 1x, /img/screen-stantions-mobile@2x.jpg 2x">
+              <source media="(max-widht: 1199px)"
+                srcset="/img/screen-stantions-tablet@1x.jpg 1x, /img/screen-stantions-tablet@2x.jpg 2x">
+              <img src="/img/screen-stantions-desktop@1x.jpg" srcset="/img/screen-stantions-desktop@2x.jpg 2x" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+    <section class="contact contact--border smart-city__contact wow fadeInUp">
+      <div class="container ">
+        <h2 class="contact__heading">Контакты для заказчиков</h2>
+        <p class="contact__text">
+          <span class="contact__person">Илья Черкасов</span>
+          <span class="contact__position">Директор инфраструктурного бизнеса</span>
+          <a class="link link--block contact__email"
+            href="mailto:digital@maximatelecom.ru">digital@maximatelecom.ru</a>
+        </p>
+      </div>
+    </section>
+  </section>
+  </main>
+
+  <footer class="footer page__item">
+  <div class="container">
+    <h2 class="visually-hidden">Дополнительные ссылки</h2>
+    <ul class="footer__blocks">
+      <li class="footer__block">
+        <h3 class="footer__block-header">О компании</h3>
+        <ul class="footer__block-content">
+          <li><a class="link link--block" href="careers.html">Карьера</a></li>
+          <li><a class="link link--block" href="investor.html">Партнерам и инвесторам</a></li>
+          <li><a class="link link--block" href="news.html">Новости</a></li>
+        </ul>
+      </li>
+      <li class="footer__block">
+        <h3 class="footer__block-header">Услуги</h3>
+        <ul class="footer__block-content">
+          <li><a class="link link--block" href="smart-city.html">Цифровой город</a></li>
+          <li><a class="link link--block" href="business.html">Бизнесу</a></li>
+          <li><a class="link link--block" href="support.html">Пользователю</a></li>
+          <li><a class="link link--block" href="advertising.html">Рекламодателям</a></li>
+        </ul>
+      </li>
+      <li class="footer__block footer__block--contacts">
+        <h3 class="footer__block-header">Контакты</h3>
+        <div class="footer__block-content">
+          <a class="link link--block" href="mailto:info@maximatelecom.ru">info@maximatelecom.ru</a>
+          <p class="footer__address">Старопименовский пер., 10<br>Москва, Россия, 127006</p>
+          <a class="link link--block" href="tel:+74997042777">+7 (499) 704-2777</a>
+        </div>
+      </li>
+      <li class="footer__block footer__block--social">
+        <h3 class="footer__block-header footer__block-header--social">Мы в соцсетях</h3>
+        <ul class="footer__block-content social social--flex">
+          <li class="social__icon social__icon--instagram">
+            <a class="link link--block" href="https://www.instagram.com/maximatelecom/" aria-label="Наша страница в Instagram" target="_blank" rel="noreferrer noopener">
+              <svg width="20" height="20">
+                <use xlink:href="/img/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__icon social__icon--facebook">
+            <a class="link link--block" href="https://www.facebook.com/MaximaTelecom" aria-label="Наша страница в Facebook" target="_blank" rel="noreferrer noopener">
+              <svg width="20" height="20">
+                <use xlink:href="/img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__icon social__icon--vk">
+            <a class="link link--block" href="https://vk.com/maximatelecom" aria-label="Наша страница во ВКонтакте" target="_blank" rel="noreferrer noopener">
+              <svg width="24" height="14">
+                <use xlink:href="/img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__icon social__icon--twitter">
+            <a class="link link--block" href="https://twitter.com/maximatelecom" aria-label="Наша страница в Twitter" target="_blank" rel="noreferrer noopener">
+              <svg width="23" height="18">
+                <use xlink:href="/img/sprite.svg#icon-tw"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  <p class="footer__copyright">© 2020 МаксимаТелеком</p>
+  </div>
+</footer>
+
+  <script src="/js/vendor.js?id=5e8b60038f75a12fa700" defer></script>
+  <script src="/js/script.js?id=610c453633abdc687a69" defer></script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142086552-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142086552-1');
+</script>
+    <script type="text/javascript" async>
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(54110347, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript>
+  <div>
+    <img src="https://mc.yandex.ru/watch/54110347  https://mc.yandex.ru/watch/54110347" style="position:absolute; left:-9999px;" alt="" />
+  </div>
+</noscript>
+  </body>
+</html>
