@@ -237,3 +237,130 @@
         </div>
       </section>
     </div>
+   <section class="support__card card card--picture card--banner wow fadeInUp">
+  <picture class="card__picture card__picture--overlay">
+    <source media="(max-width: 767px)" srcset="/img/support-bg-mobile@1x.jpg 1x, /img/support-bg-mobile@2x.jpg 2x">
+    <source media="(max-width: 1199px)" srcset="/img/support-bg-tablet@1x.jpg 1x, /img/support-bg-tablet@2x.jpg 2x">
+    <img src="/img/support-bg-desktop@1x.jpg" srcset="/img/support-bg-desktop@2x.jpg 2x" width="1470" height="941" alt="">
+  </picture>
+  <div class="container card__inner">
+    <!-- Сюда вставлю фон -->
+    <div class="card__top">
+      <h2 class="card__title">Часто задаваемые вопросы</h2>
+    </div>
+    <ul class="card__bottom support__columns columns columns--projects">
+              <li>
+          <h3 class="columns__title support__title">
+            <a class="link link--text-white link--underlined" data-project="registration" href="https://maximatelecom.ru/support/faq/registration.html">Регистрация</a>
+          </h3>
+        </li>
+              <li>
+          <h3 class="columns__title support__title">
+            <a class="link link--text-white link--underlined" data-project="registration" href="https://maximatelecom.ru/support/faq/connection.html">Подключение</a>
+          </h3>
+        </li>
+              <li>
+          <h3 class="columns__title support__title">
+            <a class="link link--text-white link--underlined" data-project="registration" href="https://maximatelecom.ru/support/faq/like-at-home.html">Услуга &laquo;Как дома&raquo;</a>
+          </h3>
+        </li>
+              <li>
+          <h3 class="columns__title support__title">
+            <a class="link link--text-white link--underlined" data-project="registration" href="https://maximatelecom.ru/support/faq/data-processing.html">Политика обработки данных</a>
+          </h3>
+        </li>
+          </ul>
+  </div>
+</section>
+
+    <div class="support__app app wow fadeInUp">
+      <div class="app__container">
+        <p class="app__main-text"><strong class="app__title">Установите <a class="link link--text link--underlined" href="https://maximatelecom.ru/application.html">приложение MT_FREE</a></strong></p>
+        <p class="app__text">Подключайтесь к&nbsp;сетям MT_FREE через push, управляйте автоматическим подключением и&nbsp;услугой &laquo;Как дома&raquo;</p>
+        <ul class="app__list">
+          <li class="app__item">
+            <a href="https://apps.apple.com/ru/app/wi-fi-free/id1477049988?l=ru" target="_blank" rel="noreferrer noopener" class="button app__link app__link--ios" aria-label="Загрузите в App Store">
+              <img src="/img/appstore-badge.png" width="120" height="40" class="app__badge app__badge--apple">
+            </a>
+            <div class="app__qr-link qr-link">
+              <svg class="qr-link__img" width="120" height="120">
+                <use xlink:href="/img/sprite.svg#qr-app"></use>
+              </svg>
+              <p class="qr-link__text">
+                Просто наведите камеру на QR-код и получите ссылку
+              </p>
+            </div>
+          </li>
+          <li class="app__item">
+            <a href="https://play.google.com/store/apps/details?id=ru.mt.mobilecabinet&hl=ru" target="_blank" rel="noreferrer noopener" class="button app__link app__link--android"  aria-label="Доступно в Google Play">
+              <img src="/img/google-play-badge.png" width="134" height="40" class="app__badge app__badge--google">
+            </a>
+            <div class="app__qr-link qr-link">
+              <svg class="qr-link__img" width="120" height="120">
+                <use xlink:href="/img/sprite.svg#qr-app"></use>
+              </svg>
+              <p class="qr-link__text">
+                Просто наведите камеру на QR-код и получите ссылку
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <picture class="app__img">
+        <source media="(max-width: 767px)" srcset="/img/phone-mobile@1x.jpg 1x, /img/phone-mobile@2x.jpg 2x">
+        <img width="205" height="301" src="/img/phone-desktop@1x.jpg" srcset="/img/phone-desktop@2x.jpg 2x" alt="Приложение">
+      </picture>
+    </div>
+    <div class="container wow fadeInUp">
+      <section class="support__contact">
+        <h2 class="visually-hidden">Связь с&nbsp;техподдержкой</h2>
+        <p class="support__contact-notice">Если вы&nbsp;не&nbsp;нашли ответ на&nbsp;свой вопрос, свяжитесь с&nbsp;нашей техподдержкой</p>
+        <h3 class="support__contact-caption">Контакты технической поддержки:</h3>
+        <p class="support__contacts">
+          <span>тел.: <a class="link link--block" href="tel:+74997098285">+7 (499) 709 82 85</a></span>
+          <span>email: <a class="link link--block" href="mailto:support@maximatelecom.ru">support@maximatelecom.ru</a></span>
+        </p>
+
+        <div class="form support__form-wrapper">
+  <form action="https://maximatelecom.ru/support.html" method="post" class="support__form">
+    <p class="form__field">
+      <label class="visually-hidden" for="support-form-phone">Ваш номер телефона</label>
+      <input class="form__input js-support-form-phone" id="support-form-phone" name="phone" type="text" placeholder="Ваш номер телефона" required>
+      <span class="form__field-error js-field-error"></span>
+    </p>
+    <p class="form__field">
+      <label class="visually-hidden" for="support-form-subject">Тема обращения</label>
+      <select class="form__select js-support-form-subject" id="support-form-subject" name="subject">
+        <option value>Тема обращения</option>
+        <option value="registration">Проблема с&nbsp;регистрацией</option>
+        <option value="connection">Проблема с&nbsp;подключением</option>
+        <option value="paid">Платные услуги</option>
+        <option value="thanks">Благодарность</option>
+        <option value="other">Прочее</option>
+      </select>
+      <span class="form__field-error js-field-error"></span>
+    </p>
+    <p class="form__field">
+      <label class="visually-hidden" for="support-form-message">Ваш вопрос</label>
+      <textarea class="form__input form__input--textarea js-support-form-message" id="support-form-message" name="message" placeholder="Ваш вопрос" required></textarea>
+      <span class="form__field-error js-field-error"></span>
+    </p>
+    <button class="form__button button js-support-form-submit" type="submit">
+        <span class="form__submit--default">Отправить</span>
+      <span class="form__submit--sending">Отправляем...</span>
+    </button>
+    <div class="form__error-msg">
+        Ошибка отправления
+    </div>
+
+    <div class="form__success-msg">
+      Сообщение отправлено
+    </div>
+  </form>
+</div>
+
+        <p class="support__offer">Вы&nbsp;также можете ознакомиться с&nbsp;<a href="http://static.wi-fi.ru/docs/offers/offer_portal.pdf" target="_blank" rel="noreferrer noopener" class="support__offer--link link link--block link--underlined">Условиями пользования услугами</a> и&nbsp;офертой услуги <a href="http://static.wi-fi.ru/docs/offers/payments/premium.htm" target="_blank" rel="noreferrer noopener" class="support__offer--link link link--block link--underlined">&laquo;Как дома&raquo;</a></p>
+      </section>
+    </div>
+  </section>
+    
