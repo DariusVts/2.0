@@ -363,4 +363,29 @@
       </section>
     </div>
   </section>
-    
+
+  <template id="modal-template" type="x-tmpl-mustache">
+    <section class="modal animated">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <button class="modal__close" type="button">
+            <svg width="40" height="40" aria-label="Закрыть всплывающее окно" focusable="false">
+              <use xlink:href="/img/sprite.svg#close"></use>
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <button class="modal__close-mobile" type="button">
+            <svg width="24" height="24" aria-label="Закрыть всплывающее окно" focusable="false">
+              <use xlink:href="/img/sprite.svg#close-mobile"></use>
+            </svg>
+            <span>Назад</span>
+          </button>
+          <h2 class="modal__title">{{{ title }}}</h2>
+          {{#date}}
+          <span class="date modal__date">{{ date }}</span>
+          {{/date}}
+        </div>
+        <div class="modal__content animated">{{{ body }}}</div>
+      </div>
+    </section>
+</template>
