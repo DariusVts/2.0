@@ -235,3 +235,79 @@ picture img {
     max-width: 100%;
     margin-bottom: 168px;
 }
+
+.columns--icons {
+    margin-bottom: -58px;
+}
+
+.columns__item {
+    width: 33.33%;
+    padding: 0 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 0;
+    list-style: none;
+    margin: 0 -40px;
+}
+
+
+@media (max-width: 1199px){
+.columns {
+    margin: 0 -20px;
+}}
+
+.columns__title {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 0 0 34px;
+    max-width: 400px;
+}
+
+@media (max-width: 1199px){
+.columns__title {
+    margin: 0 0 16px;
+}}
+
+.columns--icons .columns__item--user {
+    margin-bottom: 40px;
+}
+
+
+.columns--icons .columns__item {
+    margin-bottom: 80px;
+}
+
+
+.columns__item {
+    width: 33.33%;
+    padding: 0 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1199px){
+.columns__item {
+    padding: 0 20px;
+}}
+.card__bottom {
+    position: relative;
+    z-index: 3;
+}
+
+@media (max-width: 1199px){
+.columns--icons .columns__item {
+    min-height: 80px;
+}}	
