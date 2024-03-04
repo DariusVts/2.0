@@ -1,3 +1,5 @@
+
+
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%
@@ -388,5 +390,38 @@ ul {
     .container--flex {
         -ms-flex-wrap:wrap;
         flex-wrap: wrap
+    }
+}
+
+.button {
+    display: block;
+    min-width: 216px;
+    padding: 14px 9px 18px;
+    font-family: inherit;
+    color: #fff;
+    background-color: #042642;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1.125rem;
+    line-height: 1.5rem
+}
+
+.button:focus,.button:hover {
+    background-color: #003b67
+}
+
+@media (max-width: 1199px) {
+    .button {
+        min-width:203px
+    }
+}
+
+@media (max-width: 767px) {
+    .button {
+        padding:10px 14px 14px;
+        font-size: 16px
     }
 }
