@@ -425,3 +425,307 @@ ul {
         font-size: 16px
     }
 }
+
+.link {
+    text-decoration: none;
+    color: inherit
+}
+
+.link:focus,.link:hover {
+    outline: none
+}
+
+.link--block {
+    position: relative
+}
+
+.link--block:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    opacity: 0;
+    -webkit-animation-name: line-out;
+    animation-name: line-out;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s
+}
+
+.link--block:focus:after,.link--block:hover:after {
+    height: 2px;
+    width: 100%;
+    opacity: 1;
+    -webkit-animation-name: line-in;
+    animation-name: line-in;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s
+}
+
+.link--section-main {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.link--underlined:after {
+    width: 100%;
+    opacity: .32
+}
+
+.link--text,.link__hover {
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(10,20,40,.24)),to(rgba(10,20,40,.24)));
+    background-image: linear-gradient(90deg,rgba(10,20,40,.24),rgba(10,20,40,.24));
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-position: left 0 bottom .1em;
+    -webkit-animation-name: line-out-text;
+    animation-name: line-out-text;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s
+}
+
+.link--menu:after {
+    -webkit-animation-name: none;
+    animation-name: none
+}
+
+.link--text:focus,.link--text:hover {
+    background-image: -webkit-gradient(linear,left top,right top,from(#0a1428),to(#0a1428));
+    background-image: linear-gradient(90deg,#0a1428,#0a1428);
+    background-size: 100% 2px;
+    -webkit-animation-name: line-in-text;
+    animation-name: line-in-text;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s
+}
+
+.link--text-white {
+    background-image: -webkit-gradient(linear,left top,right top,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,0)));
+    background-image: linear-gradient(90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,0));
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-position: left 0 bottom 0;
+    -webkit-animation-name: line-out-text-white;
+    animation-name: line-out-text-white;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s
+}
+
+.link--text-white:focus,.link--text-white:hover {
+    background-image: -webkit-gradient(linear,left top,right top,from(#fff),to(#fff));
+    background-image: linear-gradient(90deg,#fff,#fff);
+    background-size: 100% 2px;
+    -webkit-animation-name: line-in-text-white;
+    animation-name: line-in-text-white;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s
+}
+
+.link--section {
+    position: relative;
+    display: block
+}
+
+.link--section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%
+}
+
+.link--section .link__hover {
+    background-size: 0 2px
+}
+
+.link--section:focus img,.link--section:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.link--section:focus .link__hover,.link--section:hover .link__hover {
+    background-image: -webkit-gradient(linear,left top,right top,from(#0a1428),to(#0a1428));
+    background-image: linear-gradient(90deg,#0a1428,#0a1428);
+    background-size: 100% 2px;
+    -webkit-animation-name: line-in-text;
+    animation-name: line-in-text;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s
+}
+
+@-webkit-keyframes line-in {
+    0% {
+        height: 2px;
+        width: 0;
+        opacity: 1
+    }
+
+    to {
+        height: 2px;
+        width: 100%;
+        opacity: 1
+    }
+}
+
+@keyframes line-in {
+    0% {
+        height: 2px;
+        width: 0;
+        opacity: 1
+    }
+
+    to {
+        height: 2px;
+        width: 100%;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes line-out {
+    0% {
+        height: 2px;
+        width: 100%;
+        opacity: 1
+    }
+
+    to {
+        height: 2px;
+        width: 0;
+        opacity: 1
+    }
+}
+
+@keyframes line-out {
+    0% {
+        height: 2px;
+        width: 100%;
+        opacity: 1
+    }
+
+    to {
+        height: 2px;
+        width: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes line-in-text {
+    0% {
+        background-image: -webkit-gradient(linear,left top,right top,from(#0a1428),to(#0a1428));
+        background-image: linear-gradient(90deg,#0a1428,#0a1428);
+        background-size: 0 2px
+    }
+
+    to {
+        background-image: -webkit-gradient(linear,left top,right top,from(#0a1428),to(#0a1428));
+        background-image: linear-gradient(90deg,#0a1428,#0a1428);
+        background-size: 100% 2px
+    }
+}
+
+@keyframes line-in-text {
+    0% {
+        background-image: -webkit-gradient(linear,left top,right top,from(#0a1428),to(#0a1428));
+        background-image: linear-gradient(90deg,#0a1428,#0a1428);
+        background-size: 0 2px
+    }
+
+    to {
+        background-image: -webkit-gradient(linear,left top,right top,from(#0a1428),to(#0a1428));
+        background-image: linear-gradient(90deg,#0a1428,#0a1428);
+        background-size: 100% 2px
+    }
+}
+
+@-webkit-keyframes line-out-text {
+    0% {
+        background-image: -webkit-gradient(linear,left top,right top,from(#0a1428),to(#0a1428));
+        background-image: linear-gradient(90deg,#0a1428,#0a1428);
+        background-size: 100% 2px
+    }
+
+    to {
+        background-image: -webkit-gradient(linear,left top,right top,from(#0a1428),to(#0a1428));
+        background-image: linear-gradient(90deg,#0a1428,#0a1428);
+        background-size: 0 2px
+    }
+}
+
+@keyframes line-out-text {
+    0% {
+        background-image: -webkit-gradient(linear,left top,right top,from(#0a1428),to(#0a1428));
+        background-image: linear-gradient(90deg,#0a1428,#0a1428);
+        background-size: 100% 2px
+    }
+
+    to {
+        background-image: -webkit-gradient(linear,left top,right top,from(#0a1428),to(#0a1428));
+        background-image: linear-gradient(90deg,#0a1428,#0a1428);
+        background-size: 0 2px
+    }
+}
+
+@-webkit-keyframes line-in-text-white {
+    0% {
+        background-image: -webkit-gradient(linear,left top,right top,from(#fff),to(#fff));
+        background-image: linear-gradient(90deg,#fff,#fff);
+        background-size: 0 2px
+    }
+
+    to {
+        background-image: -webkit-gradient(linear,left top,right top,from(#fff),to(#fff));
+        background-image: linear-gradient(90deg,#fff,#fff);
+        background-size: 100% 2px
+    }
+}
+
+@keyframes line-in-text-white {
+    0% {
+        background-image: -webkit-gradient(linear,left top,right top,from(#fff),to(#fff));
+        background-image: linear-gradient(90deg,#fff,#fff);
+        background-size: 0 2px
+    }
+
+    to {
+        background-image: -webkit-gradient(linear,left top,right top,from(#fff),to(#fff));
+        background-image: linear-gradient(90deg,#fff,#fff);
+        background-size: 100% 2px
+    }
+}
+
+@-webkit-keyframes line-out-text-white {
+    0% {
+        background-image: -webkit-gradient(linear,left top,right top,from(#fff),to(#fff));
+        background-image: linear-gradient(90deg,#fff,#fff);
+        background-size: 100% 2px
+    }
+
+    to {
+        background-image: -webkit-gradient(linear,left top,right top,from(#fff),to(#fff));
+        background-image: linear-gradient(90deg,#fff,#fff);
+        background-size: 0 2px
+    }
+}
+
+@keyframes line-out-text-white {
+    0% {
+        background-image: -webkit-gradient(linear,left top,right top,from(#fff),to(#fff));
+        background-image: linear-gradient(90deg,#fff,#fff);
+        background-size: 100% 2px
+    }
+
+    to {
+        background-image: -webkit-gradient(linear,left top,right top,from(#fff),to(#fff));
+        background-image: linear-gradient(90deg,#fff,#fff);
+        background-size: 0 2px
+    }
+}
+
