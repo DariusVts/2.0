@@ -1123,3 +1123,315 @@ ul {
         padding: 3px 0
     }
 }
+
+.tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    color: #fff;
+    background-color: #0a0a0a;
+    overflow: hidden
+}
+
+@media (max-width: 767px) {
+    .tabs {
+        color:#0a1428;
+        background-color: #fff
+    }
+}
+
+.tabs:hover:after {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.tabs:before {
+    content: "";
+    display: block;
+    width: 0
+}
+
+@media (max-width: 767px) {
+    .tabs:before {
+        display:none
+    }
+}
+
+.tabs__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 40px 0
+}
+
+@media (max-width: 767px) {
+    .tabs__inner {
+        padding:0
+    }
+}
+
+.tabs__inner--city {
+    padding-top: 38px;
+    padding-bottom: 37px
+}
+
+@media (max-width: 1199px) {
+    .tabs__inner--city {
+        padding-bottom:41px
+    }
+}
+
+@media (max-width: 767px) {
+    .tabs__inner--city {
+        padding-bottom:40px
+    }
+}
+
+@media (max-width: 767px) {
+    .tabs__top {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        color: #fff;
+        background-color: #0a0a0a;
+        overflow: hidden
+    }
+
+    .tabs__top:hover:after {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+
+    .tabs__top:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 342px
+    }
+
+    .tabs__top:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .45;
+        -webkit-transition: -webkit-transform .4s;
+        transition: -webkit-transform .4s;
+        transition: transform .4s;
+        transition: transform .4s,-webkit-transform .4s
+    }
+}
+
+.tabs__top--career {
+    display: block;
+    color: #0a1428;
+    background-color: transparent
+}
+
+.tabs__top--career:after,.tabs__top--career:before {
+    content: none
+}
+
+@media (max-width: 767px) {
+    .tabs__top-container {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-bottom: 16px
+    }
+}
+
+.tabs__top-container--career {
+    padding: 0 20px
+}
+
+@media (max-width: 767px) {
+    .tabs__top-container--career {
+        padding:0
+    }
+}
+
+.tabs__bottom {
+    margin-top: 80px
+}
+
+@media (max-width: 767px) {
+    .tabs__bottom {
+        margin-top:0
+    }
+}
+
+.tabs__bottom--carrer {
+    margin-top: 16px;
+    padding: 0 20px
+}
+
+.tabs__bottom--carrer div[data-qa=widget-title] {
+    display: none!important
+}
+
+@media (max-width: 1199px) {
+    .tabs__bottom--carrer {
+        margin-top:33px
+    }
+}
+
+@media (max-width: 767px) {
+    .tabs__bottom--carrer {
+        margin-top:23px;
+        padding: 0
+    }
+}
+
+.tabs__title {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    margin: 0 0 32px
+}
+
+@media (max-width: 767px) {
+    .tabs__title {
+        font-size:1.375rem;
+        line-height: 1.875rem
+    }
+}
+
+.tabs__title--city {
+    margin-bottom: 34px
+}
+
+.tabs__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 0;
+    list-style: none;
+    margin: 0 -8px 0 -4px
+}
+
+.tabs__controls li {
+    margin: 0 4px 8px
+}
+
+@media (max-width: 767px) {
+    .tabs__controls {
+        margin-bottom:-8px
+    }
+}
+
+.tabs__btn {
+    display: block;
+    padding: 9px 15px 13px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border: 1px solid hsla(0,0%,100%,.3);
+    border-radius: 2px;
+    -webkit-transition: color .2s ease-in,background-color .2s ease-in,border-color .2s ease-in;
+    transition: color .2s ease-in,background-color .2s ease-in,border-color .2s ease-in
+}
+
+.tabs__btn:focus,.tabs__btn:hover {
+    background-color: hsla(0,0%,100%,.3);
+    -webkit-transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+    transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out
+}
+
+.tabs__btn--current {
+    color: #0a1428;
+    border-color: #fff
+}
+
+.tabs__btn--current,.tabs__btn--current:focus,.tabs__btn--current:hover {
+    background-color: #fff
+}
+
+@media (max-width: 767px) {
+    .tabs__btn {
+        font-size:.75rem;
+        line-height: 1.125rem;
+        padding: 9px 14px 11px 15px
+    }
+}
+
+.tabs__content {
+    display: none
+}
+
+.tabs__content:last-child {
+    margin-bottom: 55px
+}
+
+.tabs__content--current {
+    display: block;
+    -webkit-animation-name: showTab;
+    animation-name: showTab;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+}
+
+@-webkit-keyframes showTab {
+    0% {
+        display: block;
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes showTab {
+    0% {
+        display: block;
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
