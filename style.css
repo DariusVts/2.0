@@ -1435,3 +1435,127 @@ ul {
         transform: translateY(0)
     }
 }
+
+
+.form {
+    max-width: 880px
+}
+
+.form__field {
+    margin: 0 0 16px
+}
+
+.form__input {
+    width: 100%;
+    padding: 15px 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Aeroport,Arial,sans-serif;
+    border: 1px solid rgba(10,20,40,.24);
+    outline: none;
+    -webkit-transition: border-color .3s;
+    transition: border-color .3s;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem
+}
+
+.form__input--textarea {
+    min-height: 112px;
+    resize: none
+}
+
+.form__input:focus {
+    border-color: #0a1428
+}
+
+.form__input:focus::-webkit-input-placeholder {
+    opacity: 0
+}
+
+.form__input:focus::-moz-placeholder {
+    opacity: 0
+}
+
+.form__input:focus:-ms-input-placeholder {
+    opacity: 0
+}
+
+.form__input:focus:-moz-placeholder {
+    opacity: 0
+}
+
+.form__input::-webkit-input-placeholder {
+    color: rgba(10,20,40,.4);
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s
+}
+
+.form__input::-moz-placeholder {
+    color: rgba(10,20,40,.4);
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s
+}
+
+.form__input:-ms-input-placeholder {
+    color: rgba(10,20,40,.4);
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s
+}
+
+.form__input:-moz-placeholder {
+    color: rgba(10,20,40,.4);
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s
+}
+
+.form__button {
+    padding-top: 14px;
+    padding-bottom: 18px;
+    min-width: 192px
+}
+
+@media (max-width: 767px) {
+    .form__button {
+        padding:15px 9px 17px;
+        font-size: 1.125rem;
+        line-height: 1.5rem
+    }
+}
+
+.form__field-error {
+    font-size: .875rem;
+    color: #b31d1e
+}
+
+.form__submit--default {
+    display: block
+}
+
+.form--sending .form__submit--default,.form__error-msg,.form__field-error,.form__submit--sending,.form__success-msg {
+    display: none
+}
+
+.form--dirty .form__field-error,.form--sending .form__submit--sending {
+    display: block
+}
+
+.form--dirty .form__success-msg {
+    display: none
+}
+
+.form--dirty .form__error-msg {
+    display: block
+}
+
+.form--success .form__field-error {
+    display: none
+}
+
+.form--success .form__success-msg {
+    display: block
+}
+
+.form--success .form__error-msg {
+    display: none
+}
