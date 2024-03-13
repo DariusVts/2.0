@@ -2114,3 +2114,191 @@ ul {
 .columns--projects li:last-child h3 {
     margin-bottom: 0
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 110;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.2);
+    opacity: 0;
+    pointer-events: none
+}
+
+.overlay--modal {
+    z-index: 120
+}
+
+@media (max-width: 767px) {
+    .overlay--modal {
+        z-index:0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%
+    }
+}
+
+.overlay--show,.page--modal-opened .overlay--modal {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s
+}
+
+.overlay--hide,.page--modal-closed .overlay--modal {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s
+}
+
+@media (max-width: 1199px) {
+    .menu {
+        max-width:none;
+        width: 100%;
+        background-color: #fff
+    }
+}
+
+.menu__language,.menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 0 -38px
+}
+
+@media (max-width: 1199px) {
+    .menu__language,.menu__list {
+        font-size:2.5rem;
+        line-height: 3.125rem;
+        display: block;
+        margin: 0;
+        padding: 34px 40px
+    }
+}
+
+@media (max-width: 767px) {
+    .menu__language,.menu__list {
+        font-size:1.75rem;
+        line-height: 2rem;
+        padding: 8px 16px 16px
+    }
+}
+
+.menu__language li,.menu__list li {
+    margin-left: 38px
+}
+
+@media (max-width: 1199px) {
+    .menu__language li,.menu__list li {
+        margin-left:0
+    }
+}
+
+.menu__language a,.menu__list a {
+    display: inline-block;
+    padding: 10px 0
+}
+
+.menu__language a:after,.menu__list a:after {
+    bottom: .3em
+}
+
+@media (max-width: 1199px) {
+    .menu__language a,.menu__list a {
+        padding:16px 0
+    }
+}
+
+@media (max-width: 767px) {
+    .menu__language a,.menu__list a {
+        padding:11px 0 12px
+    }
+}
+
+@media (max-width: 1199px) {
+    .menu__list {
+        -webkit-box-ordinal-group:2;
+        -ms-flex-order: 1;
+        order: 1
+    }
+}
+
+.menu__language {
+    margin-left: 38px
+}
+
+.menu__language li {
+    position: relative;
+    margin-right: 18px;
+    margin-left: 0
+}
+
+.menu__language li:last-child {
+    margin-right: 0
+}
+
+.menu__language li:after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -8px;
+    width: 1px;
+    height: 26px;
+    background-color: #0a1428
+}
+
+.menu__language li:last-child:after {
+    content: none
+}
+
+@media (max-width: 1199px) {
+    .menu__language {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0
+    }
+
+    .menu__language li {
+        margin-right: 32px
+    }
+
+    .menu__language li:after {
+        top: 10px;
+        right: -16px;
+        height: 62px
+    }
+}
+
+@media (max-width: 767px) {
+    .menu__language li:after {
+        top:7px;
+        height: 41px
+    }
+}
