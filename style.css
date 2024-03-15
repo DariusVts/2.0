@@ -2302,3 +2302,258 @@ ul {
         height: 41px
     }
 }
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    position: relative;
+    z-index: 115;
+    padding: 40px
+}
+
+@media (max-width: 1199px) {
+    .header {
+        padding:0
+    }
+}
+
+.page--main .header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+@media (max-width: 1979px) {
+    .page--main .header {
+        left:0;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@media (max-width: 1199px) {
+    .header__top {
+        width:100%;
+        padding: 18px 24px;
+        background-color: #fff
+    }
+}
+
+@media (max-width: 767px) {
+    .header__top {
+        padding:12px 16px
+    }
+}
+
+.header__logo {
+    width: 22.7941176471%;
+    min-width: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 40px;
+    margin-left: 3px
+}
+
+@media (max-width: 1199px) {
+    .header__logo {
+        width:auto;
+        min-width: 0;
+        margin-top: 4px;
+        margin-right: 0
+    }
+}
+
+@media (max-width: 1199px) {
+    .header__picture {
+        margin-left:-3px;
+        margin-top: -4px
+    }
+}
+
+.header__logo-image {
+    width: 41px;
+    height: 37px;
+    margin-right: 12px
+}
+
+@media (max-width: 1199px) {
+    .header__logo-image {
+        width:48px;
+        height: 44px;
+        margin-right: 18px
+    }
+}
+
+@media (max-width: 767px) {
+    .header__logo-image {
+        width:35px;
+        height: 32px;
+        margin-right: 13px
+    }
+}
+
+.header__logo-text {
+    width: 102px;
+    height: 24px;
+    fill: #141414
+}
+
+@media (max-width: 1199px) {
+    .header__logo-text {
+        margin-top:-4px;
+        width: 64px;
+        height: 15px
+    }
+}
+
+@media (max-width: 767px) {
+    .header__logo-text {
+        width:47px;
+        height: 11px
+    }
+}
+
+.header__logo-telecom-text {
+    display: none
+}
+
+@media (max-width: 1199px) {
+    .header__logo-telecom-text {
+        display:block;
+        margin-top: -4px;
+        margin-left: 2px;
+        width: 64px;
+        height: 15px;
+        fill: #141414
+    }
+}
+
+@media (max-width: 767px) {
+    .header__logo-telecom-text {
+        margin-left:1px;
+        width: 47px;
+        height: 11px
+    }
+}
+
+.header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-left: auto
+}
+
+@media (max-width: 1199px) {
+    .header__menu {
+        position:absolute;
+        left: 0;
+        top: 80px;
+        z-index: -1;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-left: 0;
+        pointer-events: auto
+    }
+
+    .header__menu--closed {
+        opacity: 0;
+        pointer-events: none
+    }
+}
+
+@media (max-width: 767px) {
+    .header__menu {
+        top:56px
+    }
+}
+
+.header__menu-btn {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    color: inherit;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s
+}
+
+.header__menu-btn:hover {
+    opacity: .32
+}
+
+.header__menu-btn svg {
+    fill: currentColor;
+    pointer-events: none
+}
+
+@media (max-width: 1199px) {
+    .header__menu-btn--visible {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+@media (max-width: 767px) {
+    .header__menu-btn {
+        top:4px;
+        right: 8px
+    }
+}
+
+.header__menu-open {
+    width: 32px
+}
+
+.header__menu-close {
+    display: none;
+    width: 24px
+}
+
+.header__menu-btn--close .header__menu-open {
+    display: none
+}
+
+.header__menu-btn--close .header__menu-close {
+    display: block
+}
+
