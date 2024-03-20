@@ -2759,3 +2759,127 @@ p.footer__address {
     line-height: 1.25rem;
     margin: 0
 }
+
+.inner {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    position: relative;
+    padding-top: 96px;
+    max-width: none;
+    -webkit-transition: max-width .6s;
+    transition: max-width .6s
+}
+
+@media (max-width: 1199px) {
+    .inner {
+        padding-top:80px
+    }
+}
+
+@media (max-width: 767px) {
+    .inner {
+        padding-top:24px
+    }
+}
+
+.inner--support {
+    padding-top: 96px
+}
+
+@media (max-width: 1199px) {
+    .inner--support {
+        padding-top:80px
+    }
+}
+
+@media (max-width: 767px) {
+    .inner--support {
+        padding-top:24px
+    }
+}
+
+@media (max-width: 767px) {
+    .page--modal-opened .inner {
+        position:absolute;
+        width: 100%
+    }
+}
+
+.inner__container {
+    max-width: 880px
+}
+
+@media (max-width: 767px) {
+    .inner__container {
+        max-width:580px
+    }
+}
+
+.inner__title {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    margin: 0 0 24px
+}
+
+@media (max-width: 767px) {
+    .inner__title {
+        font-size:1.75rem;
+        line-height: 2.4375rem;
+        margin-bottom: 16px
+    }
+}
+
+.inner__title--city {
+    margin-bottom: 27px
+}
+
+@media (max-width: 767px) {
+    .inner__title--city {
+        margin-bottom:10px
+    }
+}
+
+.inner__title--team {
+    margin-bottom: 23px
+}
+
+@media (max-width: 767px) {
+    .inner__title--about {
+        margin-bottom:7px
+    }
+}
+
+.inner__intro p {
+    margin: 0 0 20px
+}
+
+@media (max-width: 767px) {
+    .inner__intro p {
+        font-size:.875rem;
+        line-height: 1.375rem;
+        margin-bottom: 16px
+    }
+}
+
+.inner__intro p:last-child {
+    margin-bottom: 0
+}
+
+.inner__main-picture {
+    display: block
+}
+
+.inner__main-picture img {
+    width: 100%;
+    height: auto
+}
+
+.inner__main-picture:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.inner__main-picture--city-mesh,.video {
+    position: relative
+}
